@@ -1,5 +1,5 @@
 /*POCSAG encoder for windows.  Please feel free to improve if you wish.  DO NOT make malice of this file, and do not insert any secuity flaws.  This program is written for the reasons of it being useful.  */
-
+#include <cstdlib>
 #include <iostream>
 #include <vector>
 #include <string>
