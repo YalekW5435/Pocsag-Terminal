@@ -14,7 +14,7 @@ The program contains several parameters, all of which are used to encode your me
         Options:
        --address <ric>       Single address (0-2097151, anything >> 2097151 gets reset to 0 and recounts)
        --function (0-3)\n
-       --group [10,20-25]  Broadcast to multiple RICs inside braces
+       --group [10,20-25]  Broadcast to multiple RICs inside braces.  DO NOT put spaces after a comma if you use this option!! (", ").  Leave it like this ",".
        --type <alpha|numeric|tone>
        --message ""      Message string to send.
        --bps <512|1200|2400> Transmission speed (Default: 1200)
