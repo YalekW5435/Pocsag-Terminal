@@ -1,4 +1,4 @@
-# Pocsag-Terminal
+# Pocsag Encoder for terminals.
 
 A console based POCSAG encoder that encodes alpha, numeric, and tone messages to a 24 bit signed PCM file at 48000hz, written in Gemini Assist's C++ engine, 
 without the use of special libraries other than c++ stdlib.
