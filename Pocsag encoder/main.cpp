@@ -98,7 +98,7 @@ void print_help() {
         << "  PocsagEncoder.exe --address --function --bps --type --message ""  --output \n"
         << "  PocsagEncoder.exe --group[, or - to repeat addresses sequentially] --function --bps --type --message "" --output ""page1.raw"" \n"
         << "  PocsagEncoder.exe --slot --address --function --bps --type --message ""  --slot --address --function --bps --type --message ""  --output ""page1.raw"" \n\n"	
-        << "  I would highly recommend using the ""required"" use to get a feel of how this functionality works."
+        << "  I would highly recommend using the ""required"" use to get a feel of how this functionality works."\n
     }
 
 int main(int argc, char* argv[]) {
