@@ -88,7 +88,7 @@ void print_help() {
         << "Options:\n"
         << "  --address <ric>       Single address (0-2097151, anything >> 2097151 gets reset to 0 and recounts)\n"
         << "  --function (0-3)\n"
-        << "  --group \"[10,20-25]\"  Broadcast to multiple RICs inside braces\n"
+        << "  --group \"[10,20-25]\"  Broadcast to multiple RICs inside braces. DO NOT put spaces after a comma if you use this option!! (", ").  Leave it like this ",".\n"
         << "  --type <alpha|numeric|tone>\n"
         << "  --message \"text\"      Message string to send\n"
         << "  --bps <512|1200|2400> Transmission speed (Default: 1200)\n"
