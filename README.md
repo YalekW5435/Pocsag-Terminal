@@ -13,7 +13,7 @@ The program contains several parameters, all of which are used to encode your me
       
         Options:
        --address <ric>       Single address (0-2097151, anything >> 2097151 gets reset to 0 and recounts)
-       --function (0-3)\n
+       --function (0-3)
        --group [10,20-25]  Broadcast to multiple RICs inside braces.  DO NOT put spaces after a comma if you use this option!! (", ").  Leave it like this ",".
        --type <alpha|numeric|tone>
        --message ""      Message string to send.
