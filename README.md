@@ -27,7 +27,7 @@ The program contains several parameters, all of which are used to encode your me
          Required use:
          PocsagEncoder.exe --address --function --bps --type --message ""  --output ""
          PocsagEncoder.exe --group[, or - to repeat addresses sequentially] --function --bps --type --message "" --output "page1.raw"
-         PocsagEncoder.exe --slot --address --function --bps --type --message""  --slot --address --function --bps --type --message "" --slot --address --function --bps --type --message ""  --output "page1.raw"
+         PocsagEncoder.exe --slot --address --function --bps --type --message ""  --slot --address --function --bps --type --message "" --slot --address --function --bps --type --message ""  --output "page1.raw"
          
          I would highly recommend using this required use to get a feel of how this functionality works. 
 
