@@ -34,7 +34,7 @@ The program contains several parameters, all of which are used to encode your me
 if you wish to use this program on SDR, depending on where youre located on Earth, or if you wish to alert pagers, please do so with caution.  
 I am not responsible for the program being used maliciously, so please encode at your own risk.  
 
-# Bugs worth nothing:
+# Bugs worth noting:
 You may notice some bugs with this app while decoding.  This is because this app requires the CPU to encode messages (on most of todays CPU's, it should take up to 3 seconds for about 50 ric grouped with a large message string).  Actual POCSAG transmitters are/were hardware based, and did not have this problem.  They were all driven by modems, probably in the form of modified dial up modems at the time, (most use bell 202 or v.23 mode 2 standards), and did not have any problems with their encoding on the air.  Computer CPU's however, must share system resources alongside the encoder, resulting in misses or errors in decoding.  Even on the fastest CPUs by AMD, Nvidia, etc. They all fail to do this with this app.  It does not matter which OS you run, especially linux, they will fail at encoding a perfect message each time, despite this app being crossplatform (windows is MUCH worse, thanks Microshaft).  
 Hopefully this isnt much of a letdown to the user, even SoRFMON had issues with its encoder as well. Thats just part of how tech works.  
 
