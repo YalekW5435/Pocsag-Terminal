@@ -4,7 +4,7 @@ A console based POCSAG encoder that encodes alpha, numeric, and tone messages to
 without the use of special libraries other than c++ stdlib.
 this program was written to solve a lot problems for specific hardware that are unable to transmit on radio, 
 or lack the specific functionality.  Message encoding has no limit.
-This program went through 15-20 iterations to actually be completely correct.  Recommended not to do what I did, so if you want to improve this utility, you are more than welcoem to do so.
+This program went through 15-20 iterations to actually be completely correct.  Recommended not to do what I did, so if you want to improve this utility, you are more than welcome to do so.
 
 The program contains several parameters, all of which are used to encode your messages.  Here is a quick help to rundown the basics:
 
