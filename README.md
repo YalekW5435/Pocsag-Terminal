@@ -4,6 +4,7 @@ A console based POCSAG encoder that encodes alpha, numeric, and tone messages to
 without the use of special libraries other than c++ stdlib.
 this program was written to solve a lot problems for specific hardware that are unable to transmit on radio, 
 or lack the specific functionality.  Message encoding has no limit.
+This program went through 15-20 iterations to actually be completely correct.  Recommended not to do what I did, so if you want to improve this utility, you are more than welcoem to do so.
 
 The program contains several parameters, all of which are used to encode your messages.  Here is a quick help to rundown the basics:
 
@@ -35,8 +36,7 @@ if you wish to use this program on SDR, depending on where youre located on Eart
 I am not responsible for the program being used maliciously, so please encode at your own risk.  
 
 # Bugs worth noting:
-You may notice some bugs with this app while decoding.  This is because this app requires the CPU to encode messages (on most of todays CPU's, it should take up to 3-5 seconds for about 50 rics grouped with a large message string at the default bps).  Actual POCSAG transmitters are/were hardware based, and did not have this problem.  They were all driven by modems, probably in the form of modified dial up modems at the time, (most use bell 202 or v.23 mode 2 standards), and did not have any problems with their encoding on the air.  Computer CPU's however, must share system resources alongside the encoder, resulting in misses or errors in decoding.  Even on the fastest CPUs by AMD, Nvidia, etc. They all fail to do this with this app.  It does not matter which OS you run, especially linux, they will fail at encoding a perfect message each time, despite this app being crossplatform (windows is MUCH worse, thanks Microshaft).  
-Hopefully this isnt much of a letdown to the user, even SoRFMON had issues with its encoder as well. Thats just part of how tech works.  
+You may notice some bugs with this app while decoding.  This is because PDW has had some issues on windows 10 and 11.  While I cant explain the exact reason due to PDW's complex decoder settings and pain in the butt to get set up, most other decoders such as soRFMon's decoder should work a whole lot better, including multiPSK, multimonNG, etc.  The original info I had provided here was completely inaccurate, so I deeply apologize.  
 
 # Final notes:
 
