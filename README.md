@@ -35,8 +35,8 @@ The program contains several parameters, all of which are used to encode your me
 if you wish to use this program on SDR, depending on where youre located on Earth, or if you wish to alert pagers, please do so with caution.  
 I am not responsible for the program being used maliciously, so please encode at your own risk.  
 
-# Bugs worth noting:
-You may notice some bugs with this app while decoding.  This is because PDW has had some issues on windows 10 and 11.  While I cant explain the exact reason due to PDW's complex decoder settings and pain in the butt to get set up, most other decoders such as soRFMon's decoder should work a whole lot better, including multiPSK, multimonNG, etc.  The original info I had provided here was completely inaccurate, so I deeply apologize.  
+# Things worth noting:
+If youre encoding numeric messages to disk and you do not see a message in PDW.exe while decoding, this is because PDW's newer versions default numeric messages to function #'s.  It attempts to guess, even with passive decoding of other transmitters on the air.  Alphanumeric messages do work fine, most of the time, and is because buffer issues tend to arise in PDW.  You will need to use another decoder to decode the numeric messages because PDW isnt the best solution for most of these applications, especially on windows. best bet is to use SoRFMon's decoder, multimon, including SDR# community plugins that allow for POCSAG decoding, as these will probably have 0 issues.  
 
 # Final notes:
 
