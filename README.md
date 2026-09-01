@@ -1,4 +1,4 @@
-# Pocsag Encoder for terminals.
+# Pocsag Encoder for terminals. v1.5.
 
 A console based POCSAG encoder that encodes alpha, numeric, and tone messages to a 24 bit signed PCM file at 48000hz, written in Gemini Assist's C++ engine, 
 without the use of special libraries other than c++ stdlib.
@@ -6,29 +6,9 @@ this program was written to solve a lot problems for specific hardware that are 
 or lack the specific functionality.  Message encoding has no limit.
 This program went through 15-20 iterations to actually be completely correct.  Recommended not to do what I did, so if you want to improve this utility, you are more than welcome to do so.
 
-The program contains several parameters, all of which are used to encode your messages.  Here is a quick help to rundown the basics:
+This program has been updated from the v1.0 to include input file IO, with the ability to bypass the 8191 character limit, along with automation features.  
+I have revamped the help screen (legitimately), to explain the additional functionalities.  Please print such to the screen to see whats changed.
 
-
-
-      
-        Options:
-       --address <ric>       Single address (0-2097151, anything >> 2097151 gets reset to 0 and recounts)
-       --function (0-3)
-       --group [10,20-25]  Broadcast to multiple RICs inside braces.  DO NOT put spaces after a comma if you use this option!! (", ").  Leave it like this ",".
-       --type <alpha|numeric|tone>
-       --message ""      Message string to send.
-       --bps <512|1200|2400> Transmission speed (Default: 1200)
-       --slot             create a batch of separate messages with different addresses.  
-                          When using this, ensure the --slot parameter comes *first* before anything.  
-                          Once your first slot is completed, you can move on to the next --slot. 
-       --output <file>       Path to 24-bit raw output.
-
-         Required use:
-         PocsagEncoder.exe --address --function --bps --type --message ""  --output ""
-         PocsagEncoder.exe --group[, or - to repeat addresses sequentially] --function --bps --type --message "" --output "page1.raw"
-         PocsagEncoder.exe --slot --address --function --bps --type --message ""  --slot --address --function --bps --type --message "" --slot --address --function --bps --type --message ""  --output "page1.raw"
-         
-         I would highly recommend using this required use to get a feel of how this functionality works. 
 
         
 # Disclaimer:
